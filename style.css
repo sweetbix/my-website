@@ -7,6 +7,9 @@
         "wdth" 100;
 }
 
+div {
+    display:flex;
+}
 
 h2 {
     font-size:3.75em;
@@ -17,7 +20,7 @@ h3 {
 }
 
 p {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 section {
@@ -62,9 +65,50 @@ section {
     padding-right: 45%;
 }
 
+#contact h2 {
+    margin:0;
+}
 
+#contact-body {
+    padding: 2% 5% 2% 5%;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    height:17em;
+    align-items: center;
+}
 
+#contact-body * {
+    margin: 0;
+    flex:1;
+}
 
+#info, #form {
+    flex-direction: column;
+    height:15em;
+}
+
+#info * {
+    margin:0.5%;
+}
+
+#socials {
+    padding: 5% 0 5% 0;
+    margin: 0;
+}
+
+#socials ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#socials * {
+    font-size:1.2em;
+}
+
+#form {
+    gap:5%;
+}
 
 
 
