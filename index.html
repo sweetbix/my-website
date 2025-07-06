@@ -37,33 +37,48 @@
             <div id="info">
                 <h3>Feel free to reach out!</h3>
                 <p>Always happy to have a chat :&#41;</p>
-                <div id="socials">
-                    <ul>
-                        <li>github</li>
-                        <li>email</li>
-                        <li>linkedin</li>
-                    </ul>
-                </div>
+                <ul id="socials">
+                        <li>
+                            <img src="images/github.svg" alt="Github icon" class="icon">
+                            <a href="https://github.com/sweetbix" target="_blank">sweetbix</a>
+                        </li>
+
+                        <li>
+                            <img src="images/email.svg" alt="Email icon" class="icon">
+                            <a href="mailto:richard.game2012@yahoo.com">richard.game2012@yahoo.com</a>
+                        </li>
+                        
+                        <li>
+                            <img src="images/linkedin.svg" alt="LinkedIn icon" class="icon">
+                            <a href="https://www.linkedin.com/in/richardguo8/" target="_blank">Richard Guo</a>
+                        </li>
+                </ul>
             </div>
 
-            <div id="form">
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                <input type="hidden" name="access_key" value="bdf952ba-f221-45be-8a2e-c558521c93fe">
+                
                 <div class="pair">
                     <h3>Email</h3>
-                    <input type="text" id="mail">
+                    <input type="text" name="mail" required>
                 </div>
 
                 <div class="pair">
                     <h3>Subject</h3>
-                    <input type="text" id="subject">
+                    <input type="text" name="subject" required>
                 </div>
                 
                 <div class="large-pair">
                     <h3>Message</h3>
-                    <textarea id="message"></textarea>
+                    <textarea name="message" required></textarea>
                 </div>
 
-                <button type="button">Submit</button>
-            </div>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                <input type="hidden" name="redirect" value="https://sweetbix.github.io/">
+                
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </section>
 </body>
