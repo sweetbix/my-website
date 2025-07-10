@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Richard Guo</title>
     
-    <link rel="stylesheet" href="./style.css">
+    <link href="./tailwind.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <ul>
-            <li>About</li>
-            <li>Resume</li>
-            <li>Contact</li>
-        </ul>
+    <div class="fixed top-0 justify-center bg-white py-5 flex flex-row w-screen">
+        <ul class="flex flex-row gap-6.5 font-def text-xl">
+            <a class="cursor-pointer" href="#about">About</a>
+            <a class="cursor-pointer" href="#contact">Contact</a>
+            <a class="cursor-pointer" href="https://drive.google.com/file/d/1gItVSW6IKLmknrYv9ZWXDs5dIhFx1mua/preview" target="_blank">Resume</a>
+        </ul>   
     </div>
     
-    <section id="about">
-        <h2>Richard Guo</h2>
-        <h3>CS @ UniMelb</h3>
-        <p> Computer Science student with a strong curiosity for technology and
-             a commitment to continuous learning and self-improvement. Eager to embrace new
+    <div id="about" class="flex flex-col justify-center min-h-screen max-h-screen lg:px-50">
+        <h2 class="-mt-10 -mb-5 font-medium">Richard Guo</h2>
+        <h3 class="mb-4 font-medium text-[2.2rem]">CS @ UniMelb</h3>
+        <p class="pr-100"> Computer Science student with a strong curiosity for technology and
+            a commitment to continuous learning and self-improvement. Eager to embrace new
               challenges to broaden my knowledge, develop diverse skills, and make an impact.
-        </p>
-    </section>
+        </p>    
+        
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div id="contact-body">
-            <div id="info">
-                <h3>Feel free to reach out!</h3>
-                <p>Always happy to have a chat :&#41;</p>
+    <div id="contact" class="flex flex-col min-h-screen max-h-screen lg: px-50 py-20 justify-center">
+        <div class="flex flex-row px-10">
+            <div class="flex flex-col flex-1">
+                <h3 class="font-semibold text-4xl mb-2">Feel free to reach out!</h3>
+                <p class="mb-7">Always happy to have a chat :&#41;</p>
                 <ul id="socials">
                         <li>
                             <img src="images/github.svg" alt="Github icon" class="icon">
@@ -43,7 +43,7 @@
 
                         <li>
                             <img src="images/email.svg" alt="Email icon" class="icon">
-                            <a href="mailto:richard.game2012@yahoo.com" target="_blank">richard.game2012@yahoo.com</a>
+                            <a href="mailto:richardguo808@gmail.com" target="_blank">richardguo808@gmail.com</a>
                         </li>
                         
                         <li>
@@ -53,31 +53,31 @@
                 </ul>
             </div>
 
-            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col flex-1">
                 <input type="hidden" name="access_key" value="bdf952ba-f221-45be-8a2e-c558521c93fe">
                 
-                <div class="pair">
-                    <h3>Email</h3>
-                    <input type="text" name="mail" required>
+                <div class="pair mb-7">
+                    <h3 class="text-2xl font-semibold">Email</h3>
+                    <input type="text" class="border-2 px-2" name="mail" required>
                 </div>
 
-                <div class="pair">
-                    <h3>Subject</h3>
-                    <input type="text" name="subject" required>
+                <div class="pair mb-7">
+                    <h3 class="text-2xl font-semibold">Subject</h3>
+                    <input type="text" class="border-2 px-2" name="subject" required>
                 </div>
                 
-                <div class="large-pair">
-                    <h3>Message</h3>
-                    <textarea name="message" required></textarea>
+                <div class="large-pair font-semibold mb-10">
+                    <h3 class="text-2xl">Message</h3>
+                    <textarea class="border-2 px-2" name="message" required></textarea>
                 </div>
 
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 
                 <input type="hidden" name="redirect" value="https://sweetbix.github.io/">
                 
-                <button type="submit">Submit</button>
+                <button type="submit" class="border-2 rounded-lg font-bold text-3xl py-2">Submit</button>
             </form>
         </div>
-    </section>
+    </div>
 </body>
 </html>
