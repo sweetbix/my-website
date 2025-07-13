@@ -12,15 +12,6 @@ div {
     display:flex;
 }
 
-h2 {
-    font-size:4.2em;
-}
-
-p {
-    font-size: 1.5em;
-}
-
-
 #socials {
     display: flex;
     flex-direction: column;
@@ -28,18 +19,6 @@ p {
     padding: 3em 0 0 0;
     margin: 0;
     gap: 0.75em;
-}
-
-#socials li {
-    display: flex;
-    align-items:center;
-    gap: 0.45em;
-    font-size: 1.3em;
-}
-
-#socials a {
-    color:black;
-    text-decoration-line: none;
 }
 
 .icon {
@@ -57,7 +36,7 @@ p {
 
 .pair input, .large-pair textarea {
     border-radius: 8px;
-    font-size: 1.3em;
+    font-size: 1em;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
 }
@@ -71,8 +50,6 @@ p {
 .large-pair textarea {
     resize: none;
 }
-
-
 
 
 @media (max-width: 480px) {

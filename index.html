@@ -6,49 +6,87 @@
 
     <title>Richard Guo</title>
     
-    <link href="./tailwind.css" rel="stylesheet" >
+    <link href="tailwind.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="fixed top-0 justify-center bg-white py-5 flex flex-row w-screen">
-        <ul class="flex flex-row gap-6.5 font-def text-xl">
-            <a class="cursor-pointer" href="#about">About</a>
-            <a class="cursor-pointer" href="#contact">Contact</a>
-            <a class="cursor-pointer" href="https://drive.google.com/file/d/1gItVSW6IKLmknrYv9ZWXDs5dIhFx1mua/preview" target="_blank">Resume</a>
+<body class="bg-slate-900 text-slate-400 selection:text-teal-900 selection:bg-teal-300">
+    <div class="fixed top-0 justify-center py-5 flex flex-row w-screen">
+        <ul class="flex flex-row gap-6.5 font-def text-md">
+            <a class="cursor-pointer hover:text-slate-200 transition-colors duration-200" href="#about">About</a>
+            <a class="cursor-pointer hover:text-slate-200 transition-colors duration-200" href="#contact">Contact</a>
+            <a class="cursor-pointer hover:text-slate-200 transition-colors duration-200" href="https://drive.google.com/file/d/1gItVSW6IKLmknrYv9ZWXDs5dIhFx1mua/preview" target="_blank">Resume</a>
         </ul>   
     </div>
     
     <div id="about" class="flex flex-col justify-center min-h-screen max-h-screen lg:px-50">
-        <h2 class="-mt-10 -mb-5 font-medium">Richard Guo</h2>
-        <h3 class="mb-4 font-medium text-[2.2rem]">CS @ UniMelb</h3>
-        <p class="pr-100"> Computer Science student with a strong curiosity for technology and
+        <h2 class="-mt-10 text-6xl font-medium text-slate-200">Richard Guo</h2>
+        <h3 class="mb-2 text-2xl font-medium text-slate-200">CS @ UniMelb</h3>
+        <p class="sm:pr-25 md:pr-50 lg:pr-100 text-lg"> Computer Science student with a strong curiosity for technology and
             a commitment to continuous learning and self-improvement. Eager to embrace new
               challenges to broaden my knowledge, develop diverse skills, and make an impact.
         </p>    
         
     </div>
 
-    <div id="contact" class="flex flex-col min-h-screen max-h-screen lg: px-50 py-20 justify-center">
+    <div id="contact" class="flex flex-col min-h-screen max-h-screen lg:px-50 lg:py-20 justify-center">
         <div class="flex flex-row px-10">
-            <div class="flex flex-col flex-1">
-                <h3 class="font-semibold text-4xl mb-2">Feel free to reach out!</h3>
-                <p class="mb-7">Always happy to have a chat :&#41;</p>
-                <ul id="socials">
+            <div class="flex flex-col flex-1 ">
+                <h3 class="font-semibold text-4xl mb-2 ">Feel free to reach out!</h3>
+                <p class="mb-12 text-xl">Always happy to have a chat :&#41;</p>
+                <ul id="socials" class="text-sm">
                         <li>
-                            <img src="images/github.svg" alt="Github icon" class="icon">
-                            <a href="https://github.com/sweetbix" target="_blank">sweetbix</a>
+                            <a class="group flex-row inline-flex items-center gap-2 text-lg hover:text-white" href="https://github.com/sweetbix" target="_blank" title="GitHub" aria-label="GitHub profile">
+                                <?xml version="1.0"?>
+                                <svg class="fill-slate-400 group-hover:fill-slate-200" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="45px" height="45px">    
+                                <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,
+                                26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 
+                                c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,
+                                0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,
+                                0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,
+                                1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,
+                                9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,
+                                0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,
+                                22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,
+                                3,15,3z"/>
+                                </svg>
+                                sweetbix
+                            </a>
                         </li>
 
                         <li>
-                            <img src="images/email.svg" alt="Email icon" class="icon">
-                            <a href="mailto:richardguo808@gmail.com" target="_blank">richardguo808@gmail.com</a>
+                            <a class="group flex-row inline-flex items-center gap-2 text-lg hover:text-white" href="mailto:richardguo808@gmail.com" target="_blank" title="Email" aria-label="Email">
+                            <svg class="fill-slate-400 group-hover:fill-slate-200" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="45px" height="45px">
+                                <path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 
+                                36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z 
+                                M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C
+                                26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234
+                                16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C
+                                11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234
+                                z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 
+                                32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625
+                                27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 
+                                28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 
+                                33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 
+                                20 26.410156 z"/>
+                                </svg>
+                                richardguo808@gmail.com
+                            </a>
                         </li>
                         
                         <li>
-                            <img src="images/linkedin.svg" alt="LinkedIn icon" class="icon">
-                            <a href="https://www.linkedin.com/in/richardguo8/" target="_blank">Richard Guo</a>
+                            <a class="group flex-row inline-flex items-center gap-2 text-lg hover:text-white" href="https://www.linkedin.com/in/richardguo8/" target="_blank" title="LinkedIn" aria-label="LinkedIn profile">
+                            <?xml version="1.0"?>
+                            <svg class="fill-slate-400 group-hover:fill-slate-200" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="45px" height="45px">   
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,
+                                43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,
+                                1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,
+                                24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,
+                                8.26V39z"/>
+                                </svg>
+                                Richard Guo
+                            </a>
                         </li>
                 </ul>
             </div>
@@ -56,18 +94,18 @@
             <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col flex-1">
                 <input type="hidden" name="access_key" value="bdf952ba-f221-45be-8a2e-c558521c93fe">
                 
-                <div class="pair mb-7">
-                    <h3 class="text-2xl font-semibold">Email</h3>
+                <div class="pair mb-5">
+                    <h3 class="text-xl font-semibold">Email</h3>
                     <input type="text" class="border-2 px-2" name="mail" required>
                 </div>
 
-                <div class="pair mb-7">
-                    <h3 class="text-2xl font-semibold">Subject</h3>
+                <div class="pair mb-5">
+                    <h3 class="text-xl font-semibold">Subject</h3>
                     <input type="text" class="border-2 px-2" name="subject" required>
                 </div>
                 
-                <div class="large-pair mb-10">
-                    <h3 class="text-2xl font-semibold">Message</h3>
+                <div class="large-pair mb-7">
+                    <h3 class="text-xl font-semibold">Message</h3>
                     <textarea class="border-2 px-2" name="message" required></textarea>
                 </div>
 
@@ -75,9 +113,15 @@
                 
                 <input type="hidden" name="redirect" value="https://sweetbix.github.io/">
                 
-                <button type="submit" class="border-2 rounded-lg font-bold text-3xl py-2">Submit</button>
+                <button type="submit" class="border-2 rounded-lg font-bold text-xl py-2 cursor-pointer
+                hover:bg-slate-700 hover:bg-opacity-5 hover:text-2xl transition-colors duration-200">Submit</button>
             </form>
         </div>
     </div>
+
+    <div id="spotlight" class="pointer-events-none fixed top-0 left-0 w-140 h-140 rounded-full bg-blue-500
+    opacity-30 blur-3xl mix-blend-soft-light z-50"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
