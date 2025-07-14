@@ -8,6 +8,14 @@
         "wdth" 100;
 }
 
+.nav-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
 div {
     display:flex;
 }
@@ -49,16 +57,4 @@ div {
 
 .large-pair textarea {
     resize: none;
-}
-
-
-@media (max-width: 480px) {
-    body {
-        font-size: 0.6em;
-    }
-
-    .header {
-        padding-top:3%;
-        padding-bottom:1.5%;
-    }
 }
