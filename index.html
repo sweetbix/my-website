@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-slate-900 text-slate-400 selection:text-teal-900 selection:bg-teal-300">
-    <div class="fixed top-0 justify-center flex flex-row w-screen  md:py-5">
-        <ul class="flex flex-row gap-6.5 font-def text-sm">
+    <div class="fixed top-0 justify-center flex flex-row w-screen lg:py-5">
+        <ul class="flex-row gap-6.5 font-def hidden lg:text-sm lg:flex">
             <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font
             nav-link [&.active]:text-slate-200 [&.active]:font-semibold" href="#about">ABOUT</a>
             <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font
@@ -23,25 +23,25 @@
         </ul>   
     </div>
     
-    <section id="about" class="flex flex-col justify-center min-h-screen max-h-screen lg:px-50">
+    <section id="about" class="flex flex-col justify-center min-h-screen max-h-screen px-[8%] md:px-[13%] lg:px-[18%]">
         <h2 class="-mt-10 text-6xl font-medium text-slate-200">Richard Guo</h2>
         <h3 class="mb-2 text-2xl font-medium text-slate-200">CS @ UniMelb</h3>
-        <p class="sm:pr-25 md:pr-50 lg:pr-100 text-lg"> Computer Science student with a strong curiosity for technology and
+        <p class="md:pr-[20%] lg:pr-[40%] text-lg"> Computer Science student with a strong curiosity for technology and
             a commitment to continuous learning and self-improvement. Eager to embrace new
               challenges to broaden my knowledge, develop diverse skills, and make an impact.
         </p>    
     </section>
 
-    <section id="contact" class="flex flex-col min-h-screen max-h-screen lg:px-50 lg:py-20 justify-center">
-        <div class="flex flex-row px-10">
-            <div class="flex flex-col flex-1 ">
+    <section id="contact" class="flex flex-col min-h-screen max-h-screen justify-between py-20 md:py-0 md:justify-center md:px-[5%] lg:px-[15%]">
+        <div class="flex flex-col md:flex-row px-10">
+            <div class="flex flex-col flex-1">
                 <h3 id="dynamic-text" class="font-semibold text-4xl mb-2 transition-colors duration-1000">Feel free to reach out!</h3>
-                <p class="mb-12 text-xl">Always happy to have a chat :&#41;</p>
-                <ul id="socials" class="text-sm">
+                <p class="text-xl mb-110 md:mb-14">Always happy to have a chat :&#41;</p>
+                <ul id="socials" class="text-xs md:text-sm flex-col">
                         <li>
                             <a class="group flex-row inline-flex items-center gap-2 text-lg hover:text-white" href="https://github.com/sweetbix" target="_blank" title="GitHub" aria-label="GitHub profile">
                                 <?xml version="1.0"?>
-                                <svg class="fill-slate-400 group-hover:fill-slate-200 transition-colors duration-200" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="45px" height="45px">    
+                                <svg class="fill-slate-400 group-hover:fill-slate-200 transition-colors duration-200 h-8 w-8 md:h-12 md:w-12" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30">    
                                 <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,
                                 26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 
                                 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,
@@ -59,7 +59,7 @@
 
                         <li>
                             <a class="group flex-row inline-flex items-center gap-2 text-lg hover:text-white" href="mailto:richardguo808@gmail.com" target="_blank" title="Email" aria-label="Email">
-                            <svg class="fill-slate-400 group-hover:fill-slate-200 transition-colors duration-200" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="45px" height="45px">
+                            <svg class="fill-slate-400 group-hover:fill-slate-200 transition-colors duration-200 h-8 w-8 md:h-12 md:w-12" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="45px" height="45px">
                                 <path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 
                                 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z 
                                 M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C
@@ -80,7 +80,7 @@
                         <li>
                             <a class="group flex-row inline-flex items-center gap-2 text-lg hover:text-white" href="https://www.linkedin.com/in/richardguo8/" target="_blank" title="LinkedIn" aria-label="LinkedIn profile">
                             <?xml version="1.0"?>
-                            <svg class="fill-slate-400 group-hover:fill-slate-200 transition-colors duration-200" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="45px" height="45px">   
+                            <svg class="fill-slate-400 group-hover:fill-slate-200 transition-colors duration-200 h-8 w-8 md:h-12 md:w-12" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="45px" height="45px">   
                                 <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,
                                 43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,
                                 1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,
@@ -93,7 +93,8 @@
                 </ul>
             </div>
 
-            <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col flex-1">
+            <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col flex-1 z-10 md:z-0
+            -mt-130 md:mt-0">
                 <input type="hidden" name="access_key" value="bdf952ba-f221-45be-8a2e-c558521c93fe">
                 
                 <div class="pair mb-5">
